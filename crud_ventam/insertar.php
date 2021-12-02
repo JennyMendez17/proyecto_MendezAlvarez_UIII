@@ -11,7 +11,7 @@ $descuento=$_POST['descuento'];
 $ventatotal=$_POST['ventatotal'];
 
 
-$sql="INSERT INTO empleado VALUES('$idventa','$fecha_venta','$nombre','$productos' ,'$cantidad_productos' ,'$descuento' ,'$ventatotal')";
+$sql="INSERT INTO ventam VALUES('$idventa','$fecha_venta','$nombre','$productos' ,'$cantidad_productos' ,'$descuento' ,'$ventatotal')";
 $query= mysqli_query($con,$sql);
 
 if($query){
