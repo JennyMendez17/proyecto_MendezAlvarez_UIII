@@ -59,11 +59,13 @@
                                             while($row=mysqli_fetch_array($query)){
                                         ?>
                                             <tr>
+                                                <th><?php  echo $row['idventa']?></th>
+                                                <th><?php  echo $row['fecha_venta']?></th>
                                                 <th><?php  echo $row['nombre']?></th>
-                                                <th><?php  echo $row['apellidos']?></th>
-                                                <th><?php  echo $row['ventas']?></th>
-                                                <th><?php  echo $row['inventario']?></th> 
-                                                <th><?php  echo $row['ventas']?></th>   
+                                                <th><?php  echo $row['productos']?></th>
+                                                <th><?php  echo $row['cantidad_productos']?></th>
+                                                <th><?php  echo $row['descuento']?></th> 
+                                                <th><?php  echo $row['ventatotal']?></th>   
                                                 <th><a href="actualizar.php?id=<?php echo $row['idventa'] ?>" class="btn btn-info">Editar</a></th>
                                                 <th><a href="delete.php?id=<?php echo $row['idventa'] ?>" class="btn btn-danger">Eliminar</a></th>                                        
                                             </tr>
