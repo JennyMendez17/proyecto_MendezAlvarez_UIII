@@ -2,7 +2,7 @@
     include("conexion.php");
     $con=conectar();
 
-    $idcliente=$_GET['id'];
+    $id=$_GET['id'];
 
 $sql="SELECT * FROM clientem WHERE idcliente='$id'";
 
